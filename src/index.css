@@ -1,13 +1,111 @@
+@font-face{font-family:Neue Einstellung;src:local("NeueEinstellung-SemiBold"),url(./components/fonts/23pGLov.woff2) format("woff2"),url(./components/fonts/32pWASy.woff) format("woff");font-weight:600;font-style:normal}
+@font-face{font-family:Neue Einstellung;src:local("NeueEinstellung-Thin"),url(./components/fonts/2fCplIK.woff2) format("woff2"),url(./components/fonts/1D8lW7G.woff) format("woff");font-weight:100;font-style:normal}
+@font-face{font-family:Neue Einstellung;src:local("NeueEinstellung-ExtraBold"),url(./components/fonts/3FA2SJo.woff2) format("woff2"),url(./components/fonts/1cNoVrG.woff) format("woff");font-weight:800;font-style:normal}
+@font-face{font-family:Neue Einstellung;src:local("NeueEinstellung-Black"),url(./components/fonts/ixbr3lb.woff2) format("woff2"),url(./components/fonts/31B9yHt.woff) format("woff");font-weight:900;font-style:normal}
+@font-face{font-family:Neue Einstellung;src:local("NeueEinstellung-Medium"),url(./components/fonts/13ZL4D5.woff2) format("woff2"),url(./components/fonts/2vntkyX.woff) format("woff");font-weight:500;font-style:normal}
+@font-face{font-family:Neue Einstellung;src:local("NeueEinstellung-Light"),url(./components/fonts/2RrPByu.woff2) format("woff2"),url(./components/fonts/1Q0RZdt.woff) format("woff");font-weight:300;font-style:normal}
+@font-face{font-family:Neue Einstellung Regular;src:local("NeueEinstellung-Regular"),url(./components/fonts/2ouwpzi.woff2) format("woff2"),url(./components/fonts/2pyXnS9.woff) format("woff");font-weight:400;font-style:normal}
+@font-face{font-family:Neue Einstellung;src:local("Neue Einstellung SemiBold"),local("NeueEinstellung-SemiBold"),url(./components/fonts/23pGLov.woff2) format("woff2"),url(./components/fonts/32pWASy.woff) format("woff");font-weight:600;font-style:normal}
+@font-face{font-family:Neue Einstellung;src:local("Neue Einstellung ExtraBold"),local("NeueEinstellung-ExtraBold"),url(./components/fonts/3FA2SJo.woff2) format("woff2"),url(./components/fonts/1cNoVrG.woff) format("woff");font-weight:800;font-style:normal}
+@font-face{font-family:Neue Einstellung Light;src:local("Neue Einstellung Light"),local("NeueEinstellung-Light"),url(./components/fonts/2RrPByu.woff2) format("woff2"),url(./components/fonts/1Q0RZdt.woff) format("woff");font-weight:300;font-style:normal}
+@font-face{font-family:Neue Einstellung;src:local("Neue Einstellung Thin"),local("NeueEinstellung-Thin"),url(./components/fonts/2fCplIK.woff2) format("woff2"),url(./components/fonts/1D8lW7G.woff) format("woff");font-weight:100;font-style:normal}
+@font-face{font-family:Neue Einstellung;src:local("Neue Einstellung Bold"),local("NeueEinstellung-Bold"),url(./components/fonts/2NFO1To.woff2) format("woff2"),url(./components/fonts/36eLL15.woff) format("woff");font-weight:700;font-style:normal}
+@font-face{font-family:Neue Einstellung;src:local("Neue Einstellung Medium"),local("NeueEinstellung-Medium"),url(./components/fonts/13ZL4D5.woff2) format("woff2"),url(./components/fonts/2vntkyX.woff) format("woff");font-weight:500;font-style:normal}
+@font-face{font-family:Neue Einstellung;src:local("Neue Einstellung Regular"),local("NeueEinstellung-Regular"),url(./components/fonts/2ouwpzi.woff2) format("woff2"),url(./components/fonts/2pyXnS9.woff) format("woff");font-weight:400;font-style:normal}
+@font-face{font-family:Neue Einstellung;src:local("Neue Einstellung Black"),local("NeueEinstellung-Black"),url(./components/fonts/ixbr3lb.woff2) format("woff2"),url(./components/fonts/31B9yHt.woff) format("woff");font-weight:900;font-style:normal}
+
+
+.font_light{
+  font-family: Neue Einstellung Light!important;
+}
+.font_regular{
+  font-family: Neue Einstellung Regular!important;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  /* font-family: -apple-system, "Neue Einstellung"; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -.025em;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* background: #888;  */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  background: rgba(0, 0, 0, .5);
+  border-radius: 4px;
+  height: 43.5314px;
+  transform: translate3d(0px, 128.033px, 0px);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+a, abbr, area, article, aside, audio, b, bdo, blockquote, body, button, canvas, caption, cite, code, col, colgroup, command, datalist, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figure, form, h1, h2, h3, h4, h5, h6, head, header, hgroup, hr, html, i, iframe, img, input, ins, kbd, keygen, label, legend, li, map, mark, menu, meter, nav, noscript, object, ol, optgroup, option, output, p, param, pre, progress, q, rp, rt, ruby, samp, section, select, small, span, strong, sub, sup, table, tbody, td, textarea, tfoot, th, thead, time, tr, ul, var, video {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+.test::after{
+  content: "";
+  width: 15px;
+  height: 9px;
+  display: inline-block;
+  position: relative;
+  float: right;
+  margin-top: 7px;
+  margin-left: 20px;
+  background-image: url(https://www.codigo.co/img/icons/arrow-red.svg);
+  background-repeat: no-repeat;
+}
+
+.legendItem:nth-child(-n+2) {
+  margin-bottom: 15px;
+}
+.legendWrapper::before{
+  content: '';
+  width: 1px;
+  height: 75px;
+  background: rgb(136, 124, 124);
+  position: absolute;
+}
+.legendWrapper::after {
+  content: 'LEGEND';
+  position: absolute;
+  font-size: 10px;
+  top: 74px; 
+  letter-spacing: .05em;
+}
+@media only screen and (max-width: 960px){
+  .legendWrapper::after {
+    top: -27px
+  }
 }
